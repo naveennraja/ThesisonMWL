@@ -7,4 +7,14 @@ router
 router
     .route("/getWorldBankData/:countryName")
     .get(taskCtrl.getCountryData);
+router
+    .route("/webTasks/simpleTask")
+    .post(taskCtrl.postSimpleTaskData);
+
+// router
+//     .route("/simpleTask")
+//     .post(taskCtrl.postSimpleTaskData);
+// router
+//     .route("/simpleTask")
+//     .post(taskCtrl.postSimpleTaskData);
 module.exports = router;
