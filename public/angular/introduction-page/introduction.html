@@ -1,0 +1,55 @@
+<div>
+<h2>{{vm.title}}</h2>
+    <form ng-controller="introductionController">
+        <fieldset>
+            <legend> We'll never share your details with anyone else.</legend>
+            <small id="nameHelp" class="form-text text-muted"></small>
+            <div class="form-group">
+                <label for="participant_name">Name</label>
+                <input type="email" class="form-control" id="participant_name" aria-describedby="name" placeholder="Enter Your Name" name="particpant-name">
+
+            </div>
+                <legend>Gender</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="participant-gender" id="optionGender1" value="Male" checked="">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="participant-gender" id="optionGender2" value="Female">
+                        Female
+                    </label>
+                </div>
+                <div class="form-check disabled">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="participant-gender" id="optionGender3" value="Other">
+                        Others
+                    </label>
+                    <small class="form-text text-muted">.</small>
+                </div>
+            </fieldset>
+            <fieldset>
+            <div class="form-group">
+                <label for="user_expertise">How do you classify as a Computer user ?</label>
+                <select class="form-control" id="user_expertise" name="computer-user">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Expert</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="task_type"> Please choose the task type</label>
+                <select class="form-control" id="task_type" ng-change="getTaskType()" ng-model="taskval" name="task-type">
+                    <option value="">--Select User--</option>
+                    <option>Simple</option>
+                    <!--<option>Medium</option>-->
+                    <!--<option>Complex</option>-->
+                </select>
+            </div>
+        </fieldset>
+        <a ng-href="#!/{{taskLink}}"  class="btn btn-primary" id="information">Proceed To Task</a>
+    </form>
+
+</div>

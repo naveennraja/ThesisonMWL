@@ -1,0 +1,131 @@
+
+<h2> {{vm.title}}</h2>
+<div class="alert alert-dismissible alert-info count-down-timer-container">
+    <strong>Time Left !<a href="#" class="alert-link count-down-timer text-danger"></a></strong>
+</div>
+<div class="alert alert-dismissible alert-warning instruction-container">
+<!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
+    <h4 class="alert-heading">Please read the instructions Before starting the Task!</h4>
+    <p class="mb-0"> Each countries capitals will be shown as a circle. <strong>Big Circle</strong> represents to the associated questions.<br/>
+        1. Click on the small circle to know the place name.  <br/>
+        2. Check if there are any airports/arc lines are connected from the airport<br/>
+        3. Mark the appropriate answer for the question which has been asked.<br/>
+    </p>
+    <button  class="btn btn-sm btn-secondary proceed-to-task float-right">Proceed To Task</button>
+    <div class="clearfix"></div>
+</div>
+<div class="map-container">
+    <div class="chart-container" id="medium-task-chart">
+        <div id="flight-map" class="chartdiv"></div>
+    </div>
+    <div id="medium-task-questionnaire" class="question-container">
+        <ul class="questions-list-container">
+            <li class="active-question">
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Please select the flights which are from <b>Washington DC</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input" id="customCheck7"  data-correct="true" name="ques5"/>
+                            <label class="custom-control-label" for="customCheck7">Bogota & Ottawa</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input" id="customCheck8" name="ques5"/>
+                            <label class="custom-control-label" for="customCheck8">Lisbon & Paris</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input" id="customCheck9" name="ques5"/>
+                            <label class="custom-control-label" for="customCheck9">Caracas & Panama</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Please select the flights which are from <b>London</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customCheck1"  data-relevant="true" name="ques1" data-correct="true"/>
+                            <label class="custom-control-label" for="customCheck1">Lisbon & Dublin</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customCheck2" name="ques1"  data-relevant="false">
+                            <label class="custom-control-label" for="customCheck2">Brussels & Athens</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customCheck3" name="ques1"  data-relevant="false">
+                            <label class="custom-control-label" for="customCheck3">Prague & Algiers</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Please select the flights which are from <b>Moscow</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input"  id="customCheck4"  name="ques2"/>
+                            <label class="custom-control-label" for="customCheck4">Athens & Oslo</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input"  id="customCheck5" name="ques2" data-correct="true"/>
+                            <label class="custom-control-label" for="customCheck5">Stockholm & Kuwait</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input"  id="customCheck6" name="ques2" />
+                            <label class="custom-control-label" for="customCheck6"> Tashkent & Paris</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Please select the flights which are from <b>Baghdad</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input"  id="customCheck13" name="ques3"/>
+                            <label class="custom-control-label" for="customCheck13">Abu Dhabi & Tashkent</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input"  id="customCheck14" name="ques3"/>
+                            <label class="custom-control-label" for="customCheck14">Cairo & Tashkent</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input"  id="customCheck15" name="ques3" data-correct="true"/>
+                            <label class="custom-control-label" for="customCheck15">Abu Dhabi  & Cairo </label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Please select the flights which are from <b>New Delhi</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input" id="customCheck10" name="ques4"/>
+                            <label class="custom-control-label" for="customCheck10">Colombo & Abu Dhabi</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" class="custom-control-input" id="customCheck11" name="ques4"/>
+                            <label class="custom-control-label" for="customCheck11">Damascus & Bangkok</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input" id="customCheck12" name="ques4" data-correct="true"/>
+                            <label class="custom-control-label" for="customCheck12">Singapore & Tokyo</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>You have finished the questionnaire. Please go to the NASA-TLX Form </h4>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <a href="#"  class="btn btn-sm btn-primary float-right btn-disabled" id="nextQuestion" data-correct="true" >Next</a>
+        </div>
+    </div>
+    <div>
+        <a href="#!/nasa-tlx"  class="btn btn-sm btn-success float-right" id="proceedToNasaBtn">Proceed To NASA-TLX</a>
+    </div>
+</div>

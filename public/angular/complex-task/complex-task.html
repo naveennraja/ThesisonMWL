@@ -1,0 +1,201 @@
+<!--<link href="./complex-task-styles.css" rel="stylesheet"/>-->
+<h2> {{vm.title}}</h2>
+<div class="alert alert-dismissible alert-info count-down-timer-container">
+    <strong>Time Left !<a href="#" class="alert-link count-down-timer text-danger"></a></strong>
+</div>
+<div class="alert alert-dismissible alert-warning instruction-container">
+    <!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
+    <h4 class="alert-heading">Please read the instructions Before starting the Task!</h4>
+    <p class="mb-0"> USA map with its states will be shown.<strong>Hover on the USA map</strong> to see the state name. <br/>
+        1. <b>Click</b> on the states to know the state data's populations <br/>
+        2. Go to the <b>graph and click on the bar to see the data.</b> <br/>
+        3. Mark the appropriate answer for the question which has been asked. <br/>
+    </p>
+    <button  class="btn btn-sm btn-secondary proceed-to-task float-right">Proceed To Task</button>
+    <div class="clearfix"></div>
+</div>
+<div class="map-container">
+    <div id="complex-task-chart" class="chart-container">
+        <div id="usa-map-container" class="chartdiv"></div>
+    </div>
+    <div id="complex-task-questionnaire" class="question-container">
+        <ul class="questions-list-container">
+            <li class="active-question">
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Puerto Rico, Panama and Cuba</b> and out of the three countries
+                    Please mark the lowest population country</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio1" name="customRadio1" class="custom-control-input" data-correct="true"/>
+                            <label class="custom-control-label" for="customRadio1" >Panama</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio2" name="customRadio1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Cuba</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio3" name="customRadio1" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio3">Puerto Rico</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the  population of  <b>Azerbaijan, Armenia and Georgia</b> and does Georgia's population
+                        is better than both of <b>Azerbaijan, Armenia</b>   mark the appropriate  answer</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio16" name="customRadio2" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio16">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio17" name="customRadio2" class="custom-control-input" data-correct="true" />
+                            <label class="custom-control-label" for="customRadio17" >No</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Mauritius, Madagascar and Mozambique</b> and out of the three countries
+                        Please mark the highest population country</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio4" name="customRadio3" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio4">Mauritius</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio5" name="customRadio3" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio5">Madagascar</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio6" name="customRadio3" class="custom-control-input" data-correct="true" />
+                            <label class="custom-control-label" for="customRadio6">Mozambique</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Lithuania, Latvia and Estonia</b> and out of the three countries
+                         does <b>Latvia's</b> population is lesser than both of <b>Lithuania and Estonia</b>.  mark the appropriate  answer.</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio18" name="customRadio4" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio18">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio19" name="customRadio4" class="custom-control-input" data-correct="true" />
+                            <label class="custom-control-label" for="customRadio19" >No</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Bulgaria, Romania and Poland</b> and out of the three countries
+                        Please mark the highest population country</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio7" name="customRadio5" class="custom-control-input" />
+                            <label class="custom-control-label" for="customRadio7">Bulgaria</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio8" name="customRadio5" class="custom-control-input" />
+                            <label class="custom-control-label" for="customRadio8">Romania</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio9" name="customRadio5" class="custom-control-input" data-correct="true"/>
+                            <label class="custom-control-label" for="customRadio9">Poland</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Finland, Denmark and Ireland</b> and out of the three countries
+                        does <b>Denmark's</b>  is lesser higher both of <b>Finland and Ireland</b>.  mark the appropriate  answer.</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio20" name="customRadio6" class="custom-control-input" data-correct="true"/>
+                            <label class="custom-control-label" for="customRadio20">True</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio21" name="customRadio6" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio21">False</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Slovenia,  Croatia and Montenegro</b> and out of the three countries
+                        Please mark the highest population country</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio10" name="customRadio7" class="custom-control-input" data-correct="true" />
+                            <label class="custom-control-label" for="customRadio10">Slovenia</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio11" name="customRadio7" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio11">Croatia</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio12" name="customRadio7" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio12">Montenegro</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Oman, Qatar and Kuwait</b> and out of the three countries
+                        does <b>Oman's</b>  is higher both of <b>Qatar and Kuwait</b>.  mark the appropriate  answer.</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio22" name="customRadio8" class="custom-control-input" data-correct="true" />
+                            <label class="custom-control-label" for="customRadio22">True</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio23" name="customRadio8" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio23">False</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>Compare the population of <b>Sri Lanka,  Myanmar and Vietnam</b> and out of the three countries
+                        Please mark the highest population country</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" id="customRadio13" name="customRadio9" class="custom-control-input" data-correct="true" />
+                            <label class="custom-control-label" for="customRadio13">Vietnam</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio14" name="customRadio9" class="custom-control-input"/>
+                            <label class="custom-control-label" for="customRadio14">Myanmar</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="false">
+                            <input type="radio" id="customRadio15" name="customRadio9" class="custom-control-input" />
+                            <label class="custom-control-label" for="customRadio15">Sri Lanka</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>You have finished the questionnaire. Please go to the NASA-TLX Form </h4>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <a href="#"  class="btn btn-sm btn-primary float-right btn-disabled" id="nextQuestion" data-correct="true" >Next</a>
+        </div>
+    </div>
+</div>
+<div>
+    <a href="#!/nasa-tlx"  class="btn btn-sm btn-success float-right" id="proceedToNasaBtn">Proceed To NASA-TLX</a>
+</div>
+</div>

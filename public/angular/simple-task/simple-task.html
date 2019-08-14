@@ -1,0 +1,103 @@
+
+<h2> {{vm.title}} </h2>
+<div class="alert alert-dismissible alert-warning instruction-container">
+    <!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
+    <h4 class="alert-heading">Please read the instructions Before starting the Task!</h4>
+    <p class="mb-0"> European map will be shown below.
+        <br/>
+        1. Please click on the countries to know when the country has joined to European Union(EU)
+        <br/>
+        2. Close the popup after seeing or you can click on any other country.
+        <br/>
+        3. Mark the appropriate answer for the question which has been asked.
+        <br/>
+    </p>
+    <button  class="btn btn-sm btn-secondary proceed-to-task float-right">Proceed To Task</button>
+    <div class="clearfix"></div>
+</div>
+<div class="map-container">
+    <div class="alert alert-dismissible alert-info count-down-timer-container">
+        <strong>Time Left! <a href="#" class="alert-link count-down-timer text-danger"></a></strong>
+    </div>
+    <div id="simple-task-chart" class="chart-container">
+        <div id="europe" class="chartdiv"></div>
+    </div>
+<div>
+    <!--<h3>Questions please mark the appropriate answers</h3>-->
+    <div id="simple-task-questionnaire" class="question-container">
+        <ul class="questions-list-container">
+            <li class="active-question">
+                <div class="alert alert-dismissible alert-primary">
+                <h4>When did <b>France & Germany</b> Joined EU</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" >
+                            <input type="radio" class="custom-control-input" id="customCheck1" data-correct="true" name="ques1" />
+                            <label class="custom-control-label" for="customCheck1" >1977</label>
+                        </div>
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input" id="customCheck2" name="ques1" />
+                            <label class="custom-control-label" for="customCheck2">1957</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                     <h4>Did <b>Poland</b> Joined EU at the time of 2000-2004</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input" id="customCheck3"  data-correct="true" name="ques2"/>
+                            <label class="custom-control-label" for="customCheck3">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customCheck4" name="ques2"/>
+                            <label class="custom-control-label" for="customCheck4">No</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4><b>Romania joined EU at 2006</b></h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio" data-relevant="true">
+                            <input type="radio" class="custom-control-input" id="customCheck5"  data-correct="true" name="ques3" />
+                            <label class="custom-control-label" for="customCheck5">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customCheck6" name="ques3">
+                            <label class="custom-control-label" for="customCheck6">No</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>When did <b>Croatia</b> joined EU</h4>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="customCheck7" name="ques4"/>
+                            <label class="custom-control-label" for="customCheck7">2011 </label>
+                        </div>
+                        <div class="custom-control custom-radio"  data-relevant="true">
+                            <input type="radio" class="custom-control-input" id="customCheck8" data-correct="true" name="ques4">
+                            <label class="custom-control-label" for="customCheck8">2013</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-dismissible alert-primary">
+                    <h4>You have finished the questionnaire. Please go to the NASA-TLX Form </h4>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <a href="#"  class="btn btn-sm btn-primary float-right btn-disabled" id="nextQuestion" data-correct="true" >Next</a>
+        </div>
+    </div>
+</div>
+    <div>
+        <a href="#!/nasa-tlx"  class="btn btn-sm btn-success float-right" id="proceedToNasaBtn">Proceed To NASA-TLX</a>
+    </div>
+</div>

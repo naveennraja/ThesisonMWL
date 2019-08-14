@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding:0;
+    outline:none;
+    cursor:pointer;
+}
+.floatLeft {
+    float:left;
+}
+.floatRight {
+    float:right;
+}
+.clear {
+    clear:both;
+}
+#main {
+    width:1024px;
+    margin:auto;
+}
+.selected {
+    background: #777;
+}
+.main-container {
+    width:1024px;
+    margin:auto;
+}
+/*NASA-TLX Container*/
+.selected {
+    background: #777;
+}
+h2 {
+    text-align:center;
+}
+h1,
+.slideContainer h2  {/* text-align:center; */}
+.grid-container > .floatLeft,
+.grid-container > .floatRight {
+    font-weight:bolder;
+}
+/*Hide Few Things*/
+.pairwise-container {
+    display:none;
+}
+.slideContainer label {
+    font-weight:bold;
+}
+/* NASA TLX DESIGN*/
+
+.grid-container > span {vertical-align: top;margin-top: 15px;}
+.grid-rating li{list-style:none;float:left;padding: 10px 24px 10px 25px;border: 1px solid #969696;cursor: pointer;}
+
+/*Table Styles*/
+table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+th, td {
+    padding: 15px;
+    /* 	background-color: rgba(255,255,255,0.2); */
+    color: #fff;
+}
+th {
+    text-align: left;
+}
+thead th {
+    background-color: #565656;
+}
+tbody tr,
+tbody tr:hover {
+    /* 	background-color: rgba(255,255,255,0.3); */
+}
+tbody td {
+    position: relative;
+    color:#333;
+}
+tbody tr:nth-child(odd) {
+    background:#ccc;
+}
+tbody tr:nth-child(even) {
+    background:#f2f2f2;
+}
+/**/
+.count-down-timer-container{
+    position: fixed;
+    top: 0;
+    right: 2%;
+}
+/*AM Charts Map */
+.chart-container{
+    width:100%;
+}
+#europe,
+#flight-map,
+#usa-map-container {
+    width:100%;
+    height:450px;
+}
+.chartwrapper {
+    width: 70%;
+    margin: 30px auto;
+    position: relative;
+    padding-bottom: 50%;
+}
+.chartdiv {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    border: 1px dotted #ccc;
+}
+/*Proceed To Nasa*/
+#proceedToNasaBtn{
+    display:none;
+}
+/*Disable Button*/
+.btn-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+/*Quiz Container*/
+.question-container  {
+    display: none;
+}
+.questions-list-container li {
+    list-style:none;
+    display:none;
+}
+.questions-list-container li.active-question {
+    display:block;
+}
+/*Chart*/
+.amcharts-amexport-menu {
+    display:none !important;
+}

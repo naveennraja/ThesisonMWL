@@ -1,20 +1,16 @@
 var express = require("express");
 var router = express.Router();
-var taskCtrl =require("../controller/tasks_controller");
+var taskCtrl = require("../controller/tasks_controller");
+var worldDataCtrl = require("../controller/worldData_Controller");
+
 router
     .route("/getWorldBankData")
-    .get(taskCtrl.getWorldData);
+    .get(worldDataCtrl.getWorldData);
 router
-    .route("/getWorldBankData/:countryName")
-    .get(taskCtrl.getCountryData);
+    .route("/getWorldBankData/:Country_Code")
+    .get(worldDataCtrl.getCountryData);
 router
-    .route("/webTasks/simpleTask")
-    .post(taskCtrl.postSimpleTaskData);
+    .route("/webTasks/postTaskData")
+    .post(taskCtrl.postTaskData);
 
-// router
-//     .route("/simpleTask")
-//     .post(taskCtrl.postSimpleTaskData);
-// router
-//     .route("/simpleTask")
-//     .post(taskCtrl.postSimpleTaskData);
 module.exports = router;
