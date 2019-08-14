@@ -1,0 +1,33 @@
+{
+  "name": "webtasks",
+  "version": "1.0.0",
+  "description": "Thesis webtasks",
+  "main": "nodeapp.js",
+  "scripts": {
+    "start": "node nodeapp.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveennraja/Thesis.git"
+  },
+  "keywords": ["Masters", "Thesis", "with", "mean", "stack"],
+  "author": "Naveen Nata Raja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveennraja/Thesis/issues"
+  },
+  "homepage": "https://github.com/naveennraja/Thesis/public/index.html",
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.5.8",
+    "angular": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.5"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
