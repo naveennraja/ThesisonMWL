@@ -15,7 +15,8 @@ app.use(function(req, res, next) {
     next();
 });
 // Set static directory before defining routes
-app.use(express.static(path.join(__dirname, 'public')));
+console.log("PWD-----------------------------------",__dirname);
+app.use(express.static(path.join(__dirname)));
 app.use("/node_modules", express.static(__dirname + '/node_modules'));
 // Enable parsing of posted forms
 app.use(bodyParser.urlencoded({ extended: false }));
